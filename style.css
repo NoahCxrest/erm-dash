@@ -1,94 +1,45 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
-*{
-    box-sizing: border-box;
-    &:active, &:focus{
-    	border: 0;
-    	outline: 0;
-    }
+body {
+  background-color: #121212;
+  color: #fff;
+  overflow: hidden;
 }
 
-html, body {
-	height: 100%;
-	padding: 0;
+.loader {
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 
-html {
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	@media screen and (max-width: 70em) {
-		font-size: ( 10 / 16 ) * 1rem;
-	}
+.loader-inner {
+  flex: 1;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-body{
-	background-color: #EEEEEF;
-	font-family: Montserrat, Helvetica, Times, serif;
-	font-size: 1rem;
-	line-height: 1.45;
-	text-rendering: optimizeLegibility;
-	-webkit-font-feature-settings: "liga", "kern";
+#reload {
+  width: 16px;
+  height: 16px;
+  margin-top: 1rem;
+  fill: #fff;
+  opacity: .6;
+  cursor: pointer;
+  transform: scale(0);
+  transition: transform 300ms ease;
 }
 
-a{
-	color: #555;
-	text-decoration: none;
-}
-a:hover{ color: #888; }
-
-
-p {
-	margin-bottom: 1.3em;
+#reload:hover {
+  opacity: 1;
 }
 
-h1, h2, h3, h4 {
-	margin: 1.414em 0 0.5em;
-	font-weight: 700;
-	line-height: 1.2;
-	letter-spacing: -.45rem;
+#reload.active {
+  transform: scale(1);
 }
 
-h1 {
-	margin-top: 0;
-	font-size: 6.853em;
-	/* Hello stylesheet! */
-	width: 90vw;
-	@extend %fit-top-right-bottom-left;
+canvas {
+  transition: opacity 300ms ease;
 }
 
-
-section{
-	position: relative;
-	height: 100vh;
-	padding: 2.618em 0;
-	text-align: center;
-	text-shadow: -2px 1px rgba(black, 0.1);
-	&:after{
-		content: 'Move your Mouse and Play with Reactjs "ES6". Created by Siamak Mokhtari.';
-		position: absolute;
-		bottom: 10%;
-		left: 50%;
-		transform: translateX(-50%);
-		font-size: 1.75ex;
-		font-weight: 300;
-		font-family: Lato, Helvetica, Times, serif;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 3.5px;
-		white-space: nowrap;
-	}
-	.bold{
-		display: inline-block;
-		font-weight: normal;
-		color: darken(#2A2C39, 10);
-		will-change: transform;
-		// transition: .2s;
-	}
-}
-
-%fit-top-right-bottom-left{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+.canvas-wrapper {
+  position: relative;
+  padding: 2rem 20px 0;
 }
