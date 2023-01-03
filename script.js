@@ -61,13 +61,13 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Neo,',
-'sooner or later',
-'you\'re going to realize',
-'just as I did',
-'that there\'s a difference',
-'between knowing the path',
-'and walking the path'];
+'Never before,',
+'has this been done,',
+'we\'re going to re-define',
+'roleplay management',
+'because there\'s a difference',
+'between being content in being average,',
+'and being the best.'];
 
 
 const el = document.querySelector('.text');
