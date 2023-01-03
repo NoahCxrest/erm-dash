@@ -58,11 +58,17 @@ class TextScramble {
 
 const phrases = [
 'Never before,',
-'has this been done,',
-'we\'re going to re-define',
-'roleplay management',
-'because there\'s a difference',
-'between being content in being average,',
+'has this been done.',
+  ' ',
+  ' ',
+'We\'re going to re-define',
+'roleplay management.',
+'Because there\'s a difference',
+'between being content in being average...',
+    ' ',
+  ' ',
+    ' ',
+  ' ',
 'and being the best.',
 ' ',
   ' ',
@@ -75,9 +81,6 @@ const phrases = [
   ' ',
   ' ',
   ' ',
-  ' ',' ',
-  ' ',
-  ' ',' ',
   ' ',
   ' ',
   ' ',
@@ -118,9 +121,7 @@ const phrases = [
   ' ',
   ' ',
   ' ',
-  ' ',
-
-' '];
+  ' '];
 
 const el = document.querySelector('.text');
 const fx = new TextScramble(el);
