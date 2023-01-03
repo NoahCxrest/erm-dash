@@ -150,3 +150,6 @@ function setup() {
 }
 
 window.onload = setup();
+$('.notify').click( function() {
+  $(this).fadeOut();
+});
