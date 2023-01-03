@@ -1,5 +1,3 @@
-
-
 const ctx = document.getElementsByTagName('canvas')[0].getContext('2d');
 const reloadElementButton = document.getElementById('reload');
 const COLOURS = ['#fff', '#fff', '#fff', '#fff'];
